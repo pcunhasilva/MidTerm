@@ -37,6 +37,15 @@ new("Rasch", name = "John",
     a = sample(-3:3, size = 4, replace = TRUE),
     y = sample(c(0,1), size = 3, replace = TRUE)) # Should return an error.
 
+# Calculate the probability for an object named John with theta equal 1
+set.seed(1223)
+John <- new("Rasch", name = "John", 
+            a = sample(-3:3, size = 4, replace = TRUE),
+            y = sample(c(0,1), size = 4, replace = TRUE))
+probRasch(raschObj = John, theta = 1)
+
+# Calculate the likelihood for an object named John with theta equal 1
+llRasch(raschObj = John, theta = 1)
 
 
 
