@@ -47,5 +47,14 @@ probRasch(raschObj = John, theta = 1)
 # Calculate the likelihood for an object named John with theta equal 1
 llRasch(raschObj = John, theta = 1)
 
+# Calculate the prior probability of a theta equal 5
+priorRasch(theta = 5)
+
+# Calculate EAP for an object named John using the default to lower and upper
+eapRasch(raschObj = John)
+# Now changing the defaults
+eapRasch(raschObj = John, lower = -1, upper = 1)
+
+
 
 
