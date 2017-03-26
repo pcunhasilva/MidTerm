@@ -1,8 +1,8 @@
 #' Calculates the prior probability of theta
 #' 
-#' @param theta A proposed value of \theta[j]
+#' @param theta A proposed value of theta
 #' 
-#' @return The height of the specified normal curve evaluated at the theta
+#' @return The prior probability of a given theta
 #' @author Patrick C. Silva: \email{pcunhasilva@wustl.edu}
 #' @examples 
 #' priorRasch(theta = 1)
