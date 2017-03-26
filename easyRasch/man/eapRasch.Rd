@@ -11,12 +11,12 @@ eapRasch(raschObj, lower = -6, upper = 6, ...)
 \arguments{
 \item{raschObj}{An object of class Rasch}
 
-\item{lower}{The lower limit of integration}
+\item{lower}{The lower limit of the integration}
 
-\item{upper}{The upper limit of integration}
+\item{upper}{The upper limit of the integration}
 }
 \value{
-The estimated value of theta_j
+The estimated value of theta
 }
 \description{
 EAP - Expected a posteriori value of theta

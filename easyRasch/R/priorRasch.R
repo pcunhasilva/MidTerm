@@ -11,7 +11,7 @@
 #' @aliases priorRasch, ANY-method
 #' @export
 setGeneric(name = "priorRasch",
-           def = function(raschObj, theta, ...)
+           def = function(theta, ...)
            {standardGeneric("priorRasch")}
 )
 

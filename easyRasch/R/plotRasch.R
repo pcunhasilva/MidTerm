@@ -1,6 +1,6 @@
 #' Plot the probability of getting a question correct on possible values of theta.
 #' 
-#' @param raschObj An object of class Rasch
+#' @param x An object of class Rasch
 #' @param eatTheta A logical vector. If TRUE, estimate values for theta are added to the plot.
 #' @param minTheta A minimum value for theta. 
 #' @param maxTheta A maximum value for theta. 

@@ -9,10 +9,10 @@
 priorRasch(raschObj, theta, ...)
 }
 \arguments{
-\item{theta}{A proposed value of \theta[j]}
+\item{theta}{A proposed value of theta}
 }
 \value{
-The height of the specified normal curve evaluated at the theta
+The prior probability of a given theta
 }
 \description{
 Calculates the prior probability of theta

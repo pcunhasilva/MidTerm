@@ -11,7 +11,7 @@ llRasch(raschObj, theta, ...)
 \arguments{
 \item{raschObj}{An object of class Rasch}
 
-\item{theta}{A proposed value of \eqn{\theta_{j}}}
+\item{theta}{A proposed value of theta}
 }
 \value{
 The calculate likelihood for a proposed theta given y
@@ -20,10 +20,10 @@ The calculate likelihood for a proposed theta given y
 Likelihood of a proposed value of theta
 }
 \examples{
-set.seed(1235)
+set.seed(124)
 Maggie <- new("Rasch", name = "Maggie", 
-a = sample(-3:3, size = 7, replace = TRUE),
-y = sample(c(0,1), size = 7, replace = TRUE))
+a = sample(-5:5, size = 10, replace = TRUE),
+y = sample(c(0,1), size = 10, replace = TRUE))
 llRasch(raschObj = Maggie, theta = 2)
 }
 \author{

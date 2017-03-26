@@ -3,15 +3,15 @@
 \docType{class}
 \name{Rasch-class}
 \alias{Rasch-class}
-\alias{Squares-Rasch}
-\alias{initialize,Rasch-method}
+\alias{Rasch-method}
+\alias{initialize,}
 \title{Generate class Rasch}
 \description{
 An object of the class Rasch must contain:
 \itemize{
 \item \code{name} The name of the test taker
-\item \code{a} A vector of the question-item paramenters a (difficulty of the question) 
-\item \code{y} A vector of answers for the respondent \eqn{y_j}
+\item \code{a} A vector of the question-item paramenters a (the difficulty of the question). 
+\item \code{y} A vector of answers for the respondent y
 }
 }
 \author{
