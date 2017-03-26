@@ -18,7 +18,24 @@ if(!dir.exists("easyRasch")){
    create("easyRasch", rstudio = FALSE)
 }
 
+# Load the current code as a package
+current.code <- as.package("easyRasch")
+load_all(current.code)
 
+# Generate the documentation
+document(current.code)
+
+###################################
+########## Test functions #########
+###################################
+
+# Generate an object class Rasch
+new("Rasch", name = "John", 
+    a = sample(-3:3, size = 4, replace = TRUE),
+    y = sample(c(0,1), size = 4, replace = TRUE))
+new("Rasch", name = "John", 
+    a = sample(-3:3, size = 4, replace = TRUE),
+    y = sample(c(0,1), size = 3, replace = TRUE)) # Should return an error.
 
 
 
