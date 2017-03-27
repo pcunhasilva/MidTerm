@@ -6,7 +6,7 @@
 \alias{plotFisherRasch,}
 \title{Test Fisher Information Plot}
 \usage{
-plotFisherRasch(raschObj, minTheta = -5, maxTheta = 5, title = NULL, ...)
+plotFisherRasch(raschObj, minTheta = -5, maxTheta = 5, title = NULL)
 }
 \arguments{
 \item{raschObj}{An object of class Rasch}
@@ -21,10 +21,9 @@ the title will be "Information Plot for 'name'".}
 \value{
 A plot with sum of the Fisher Information for a given theta in the y-axis
 and the values of theta in the x-axis.
-#' @author Patrick C. Silva: \email{pcunhasilva@wustl.edu}
 }
 \description{
-Test Fisher Information Plot
+Generate a Fisher Information Test Plot
 }
 \examples{
 set.seed(123)
@@ -32,6 +31,9 @@ Maggie <- new("Rasch", name = "Maggie",
 a = sample(-3:3, size = 16, replace = TRUE),
 y = sample(c(0,1), size = 16, replace = TRUE))
 plotFisherRasch(raschObj = Maggie, minTheta = -10, maxTheta = 10)
+}
+\author{
+Patrick C. Silva: \email{pcunhasilva@wustl.edu}
 }
 \seealso{
 \code{\link{Rasch}}

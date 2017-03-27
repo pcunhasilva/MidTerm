@@ -4,18 +4,18 @@
 \alias{ANY-method}
 \alias{priorRasch}
 \alias{priorRasch,}
-\title{Calculates the prior probability of theta}
+\title{Prior probability of theta}
 \usage{
-priorRasch(raschObj, theta, ...)
+priorRasch(theta, ...)
 }
 \arguments{
-\item{theta}{A proposed value of theta}
+\item{theta}{A proposed value of theta.}
 }
 \value{
-The prior probability of a given theta
+The prior probability of a given theta.
 }
 \description{
-Calculates the prior probability of theta
+Calculates the prior probability of theta integrating the probability density function of theta.
 }
 \examples{
 priorRasch(theta = 1)

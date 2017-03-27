@@ -4,23 +4,25 @@
 \alias{ANY-method}
 \alias{probRasch}
 \alias{probRasch,}
-\title{Probabiltiy function for a object Rasch}
+\title{Probabiltiy Rasch}
 \usage{
 probRasch(raschObj, theta, ...)
 }
 \arguments{
 \item{raschObj}{An object of class Rasch}
 
-\item{theta}{A proposed value of \theta_j}
+\item{theta}{A proposed value of theta}
 }
 \value{
 A list contains
+\itemize{
  \item A vector of length n that represents P_{ij} for each question
  \item A vector of length n that represents P_{ij} if the question was 
  answered correct and Q_{ij} if the question was answered wrong
+ }
 }
 \description{
-Probabiltiy function for a object Rasch
+Calculate the probabiltiy for a object Rasch
 }
 \examples{
 set.seed(1235)

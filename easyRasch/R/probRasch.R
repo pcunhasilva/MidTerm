@@ -1,12 +1,16 @@
-#' Probabiltiy function for a object Rasch
+#' Probabiltiy Rasch
+#' 
+#' Calculate the probabiltiy for a object Rasch
 #' 
 #' @param raschObj An object of class Rasch
-#' @param theta A proposed value of \theta_j
+#' @param theta A proposed value of theta
 #' 
 #' @return A list contains
+#' \itemize{
 #'  \item A vector of length n that represents P_{ij} for each question
 #'  \item A vector of length n that represents P_{ij} if the question was 
 #'  answered correct and Q_{ij} if the question was answered wrong
+#'  }
 #' @author Patrick C. Silva: \email{pcunhasilva@wustl.edu}
 #' @examples 
 #' set.seed(1235)
@@ -17,6 +21,7 @@
 #' @seealso \code{\link{Rasch}}
 #' @rdname probRasch
 #' @aliases probRasch, ANY-method
+#' @import methods
 #' @export
 setGeneric(name = "probRasch",
            def = function(raschObj, theta, ...)

@@ -1,10 +1,12 @@
 #' EAP - Expected a posteriori value of theta
 #' 
+#' Calculate the expected a posteriori value of theta
+#' 
 #' @param raschObj An object of class Rasch
 #' @param lower The lower limit of the integration
 #' @param upper The upper limit of the integration
 #'
-#' @return The estimated value of theta
+#' @return The estimated a posteriori value of theta
 #' @author Patrick C. Silva: \email{pcunhasilva@wustl.edu}
 #' @examples 
 #' set.seed(1235)

@@ -16,10 +16,10 @@ eapRasch(raschObj, lower = -6, upper = 6, ...)
 \item{upper}{The upper limit of the integration}
 }
 \value{
-The estimated value of theta
+The estimated a posteriori value of theta
 }
 \description{
-EAP - Expected a posteriori value of theta
+Calculate the expected a posteriori value of theta
 }
 \examples{
 set.seed(1235)

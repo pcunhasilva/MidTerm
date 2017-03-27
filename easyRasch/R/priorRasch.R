@@ -1,14 +1,17 @@
-#' Calculates the prior probability of theta
+#' Prior probability of theta
+#'
+#' Calculates the prior probability of theta integrating the probability density function of theta.
 #' 
-#' @param theta A proposed value of theta
+#' @param theta A proposed value of theta.
 #' 
-#' @return The prior probability of a given theta
+#' @return The prior probability of a given theta.
 #' @author Patrick C. Silva: \email{pcunhasilva@wustl.edu}
 #' @examples 
 #' priorRasch(theta = 1)
 #' @seealso \code{\link{Rasch}}
 #' @rdname priorRasch
 #' @aliases priorRasch, ANY-method
+#' @import stats
 #' @export
 setGeneric(name = "priorRasch",
            def = function(theta, ...)

@@ -5,12 +5,14 @@
 \alias{ANY-method}
 \alias{plot,Rasch-method}
 \alias{plotRasch,}
-\title{Plot the probability of getting a question correct on possible values of theta.}
+\title{Plot Rasch}
 \usage{
 \S4method{plot}{Rasch}(x, eatTheta = FALSE, minTheta = -5, maxTheta = 5,
   title = NULL)
 }
 \arguments{
+\item{x}{An object of class Rasch}
+
 \item{eatTheta}{A logical vector. If TRUE, estimate values for theta are added to the plot.}
 
 \item{minTheta}{A minimum value for theta.}
@@ -19,8 +21,6 @@
 
 \item{title}{A character vector with the title defined by the user. If not specified,
 the title will be "Item Characteristic Curve for 'name'".}
-
-\item{raschObj}{An object of class Rasch}
 }
 \value{
 A plot with possible values of theta in the x-axis and 

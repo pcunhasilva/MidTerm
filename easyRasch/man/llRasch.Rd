@@ -4,7 +4,7 @@
 \alias{ANY-method}
 \alias{llRasch}
 \alias{llRasch,}
-\title{Likelihood of a proposed value of theta}
+\title{Likelihood Theta (Rasch)}
 \usage{
 llRasch(raschObj, theta, ...)
 }
@@ -17,7 +17,7 @@ llRasch(raschObj, theta, ...)
 The calculate likelihood for a proposed theta given y
 }
 \description{
-Likelihood of a proposed value of theta
+Calculate the likelihood of a proposed value of theta
 }
 \examples{
 set.seed(124)

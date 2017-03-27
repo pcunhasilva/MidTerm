@@ -1,3 +1,5 @@
+#' Plot Rasch
+#'
 #' Plot the probability of getting a question correct on possible values of theta.
 #' 
 #' @param x An object of class Rasch
@@ -20,6 +22,8 @@
 #' @rdname plotRasch
 #' @aliases plotRasch, ANY-method
 #' @import plyr
+#' @import graphics
+#' @import methods
 #' @export
 setMethod(f = "plot", 
           signature = "Rasch",

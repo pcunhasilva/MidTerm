@@ -1,4 +1,6 @@
-#' Likelihood of a proposed value of theta
+#' Likelihood Theta (Rasch)
+#' 
+#' Calculate the likelihood of a proposed value of theta
 #' 
 #' @param raschObj An object of class Rasch
 #' @param theta A proposed value of theta

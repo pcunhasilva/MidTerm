@@ -1,5 +1,7 @@
 #' Test Fisher Information Plot 
 #' 
+#' Generate a Fisher Information Test Plot 
+#' 
 #' @param raschObj An object of class Rasch
 #' @param minTheta A minimum value for theta. 
 #' @param maxTheta A maximum value for theta. 
@@ -18,9 +20,11 @@
 #' @seealso \code{\link{Rasch}}
 #' @rdname plotFisherRasch
 #' @aliases plotFisherRasch, ANY-method
+#' @import graphics 
+#' @import methods
 #' @export
 setGeneric(name = "plotFisherRasch",
-           def = function(raschObj, minTheta = -5, maxTheta = 5, title = NULL, ...)
+           def = function(raschObj, minTheta = -5, maxTheta = 5, title = NULL)
            {standardGeneric("plotFisherRasch")})
 
 #' @export
@@ -63,5 +67,7 @@ setMethod(f = "plotFisherRasch",
              # Add axes
              axis(side = 1, at = seq(min(dataPlot[, 1]), max(dataPlot[, 1]), length.out = 5))
              axis(side = 2, at = round(seq(min(dataPlot[, 2]), max(dataPlot[, 2]), length.out = 5), 2))
+             # Restore default mar
+             par(mar = c(5, 4, 4, 2) + 0.1)
           }
 )

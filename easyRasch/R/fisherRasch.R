@@ -1,7 +1,9 @@
+#' Fisher Rasch
+#'
 #' Calculate the Fisher Information for a given value of theta
 #' 
 #' @param raschObj An object of class Rasch
-#' @param theta A proposed value of \theta_j
+#' @param theta A proposed value of theta
 #' 
 #' @return A numeric vector with Fisher Information for each item given the proposed value of theta 
 #' @author Patrick C. Silva: \email{pcunhasilva@wustl.edu}
